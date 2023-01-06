@@ -1,4 +1,4 @@
-# swimming-school-website
+# Assignment-1-Design-and-build-a-website
 
 ## 1.	Project Overview
 Water World Swim School needs a new modern website to provide information about the swimming programs for infants, children, and adults. The website is also a platform for customers to communicate with the swim school and instructors.  
