@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>Water World Swim School</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>       
+    </head>
+    <body>
+        <div class="container">
+            <header class="wrapper header">
+                <div id="topMenu" class="menu">
+                    <a href="index.html"><div class="logo"></div></a>
+                    <div class="item"><a href="index.html">Home</a></div>
+                    <div class="item dropdown">
+                        <a href="#" onclick="showSubMenu(event)" onmouseover="showSubMenu(event)">About Us
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="ourstory.html">Our Story</a>
+                            <a href="gallery.html">Gallery</a>
+                            <a href="testimonials.html">Testimonials</a>
+                          </div>
+                    </div>
+                    <div class="item dropdown">
+                        <a href="#" onclick="showSubMenu(event)" onmouseover="showSubMenu(event)">Programs
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="programs.html">All programs</a>
+                            <a href="babies.html">Babies</a>
+                            <a href="preschool.html">Preschool </a>
+                            <a href="primary.html">Primary  School</a>
+                            <a href="adults.html">Adults</a>
+                          </div>
+                    </div>
+                    <div class="item"><a href="news.html">News</a></div>
+                    <div class="item dropdown">
+                        <a href="#" onclick="showSubMenu(event)" onmouseover="showSubMenu(event)">Contact
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="details.html">Details</a>
+                            <a href="feedback.html">Feedback</a>
+                          </div>
+                    </div>
+                    <div class="item"><a href="assessment.html">Assessment</a></div>
+                    <div class="item icon">
+                        <a onclick="showMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <main class="body">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img alt="image" src="images/banner/hero1.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <img alt="image" src="images/banner/hero2.jpg">
+                    </div>
+                    <div class="mySlides fade">
+                        <img alt="image" src="images/banner/hero3.jpg">
+                    </div>
+                    <div class="text">
+                        <h1>Welcome to </h1>
+                        <h1>Water World Swim School</h1>
+                        <h3>Enjoy your swimming</h3>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    <br />
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>                 
+                </div>
+                <div class="flex-container">
+                    <div class="home-box">
+                        <img alt="image" id="home-relax" src="images/home/relax_woman_relax.jpg">
+                    </div>
+                    <div class="home-box">
+                        <div id="content-about-us" class="content">
+                            <h1>Lorem Ipsum </h1>
+                            <h3>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend fringilla odio in viverra. 
+                                Duis id massa ornare, ornare mauris sit amet,
+                                auctor lectus. Nullam fringilla lacinia nisi a aliquam. Aliquam erat volutpat..
+                            </p>
+                            <span id="more"><a href="ourstory.html">Read More >></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <!-- Programs features -->
+                    <h1>Programs</h1>
+                    <div class="flex-container">
+                        
+                        <div class="feature-box">
+                            <div class="feature-images">
+                                <img alt="image"  src="images/home/babies.jpg" />
+                                <a href="babies.html"><p>Babies</p></a>
+                            </div>
+                       </div>  
+                       <div class="feature-box">
+                            <div class="feature-images">
+                                <img alt="image"  src="images/home/preschool.jpg" />
+                                <a href="preschool.html"><p>Preschool Age</p></a>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-images">
+                                <img alt="image"  src="images/home/primary.jpg" />
+                                <a href="primary.html"><p>Primary Age</p></a>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-images">
+                                <img alt="image"  src="images/home/adult.jpg" />
+                                <a href="adults.html"><p>Adults</p> </a>
+                            </div>
+                        </div>                       
+                     </div>
+                </div>
+                
+
+                <div class="assessment-banner">
+                    <div class="assessment-text">   
+                        <div class="wrapper">            
+                            <h1>Start Swimming Today!</h1>
+                            <a href="assessment.html">BOOK AN ASSESSMENT</a>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="wrapper">
+                    <h1>News</h1>
+                    <div class="flex-container">
+                        <div class="news-box">
+                            <a href="news.html">
+                            <div class="news-images">
+                                <img alt="image"  src="images/home/news1.jpg" />
+                            </div>
+                            <div class="news-text">
+                                <h2><b>New1</b></h2> 
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            </a>
+                       </div>  
+                       <div class="news-box">
+                        <a href="news.html">
+                            <div class="news-images">
+                                <img alt="image"  src="images/home/news2.jpg" />
+                            </div>
+                            <div class="news-text">
+                                <h2><b>News2</b></h2> 
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="news-box">
+                            <a href="news.html">
+                            <div class="news-images">
+                                <img alt="image"  src="images/home/news3.jpg" />
+                            </div>
+                            <div class="news-text">
+                                <h2><b>News3</b></h2> 
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="news-box">
+                            <a href="news.html">
+                            <div class="news-images">
+                                <img alt="image"  src="images/home/news4.jpg" />
+                                <div class="news-text">
+                                    <h2><b>News4</b></h2> 
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            </a>
+                        </div>                       
+                    </div>
+                </div>
+            </main>
+       
+            <footer class="footer">
+                <div class="wrapper">
+                    <div class="item">
+                        <div class="logo"></div><br>
+                        <div class="copyright">
+                            <p><strong>Disclaimer & Copyright @2022</strong> </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h2>Programs</h2>
+                        <a href="babies.html"><h4>Babies</h4></a>
+                        <a href="preschool.html"><h4>Preschool Age</h4></a>
+                        <a href="primary.html"><h4>Primary Age</h4></a>
+                        <a href="adults.html"><h4>Adults</h4></a>
+                    </div>
+                    <div class="item">         
+                        <h2>Sitemap</h2>
+                        <a href="index.html"><h4>Home</h4></a>
+                        <a href="ourstory.html"><h4>About Us</h4></a>
+                        <a href="programs.html"><h4>Programs</h4></a>
+                        <a href="news.html"><h4>News</h4></a>
+                        <a href="details.html"><h4>Contact</h4></a>
+                        <a href="assessment.html"><h4>Assessment</h4></a>
+                    </div>
+                    <div class="item">
+                        <h2>Get in touch</h2>
+                        <div class="flex-container">
+                            <div class="contact">
+                                <a href="tel:323123123">
+                                    <span class="phone-icon"></span>
+                                    <p>323123123</p>
+                                </a>
+                            </div>
+                            <div class="contact">
+                                <a href="mailto:lsdkfjdlfj@mail.com">
+                                    <span class="email-icon"></span><p>lsdkfjdlfj@mail.com</p>
+                                </a>
+                            </div>
+                        </div>
+                        <h2>Social Media</h2>
+                        <a href="https://www.facebook.com" style="display:inline"><img alt="image" class="social-icon" src="images/footer/fb.png"></a>
+                        <a href="https://www.twitter.com" style="display:inline"><img alt="image" class="social-icon" src="images/footer/twitter.png"></a>
+                        <a href="https://www.instagram.com" style="display:inline"><img alt="image" class="social-icon" src="images/footer/ins.png"></a>
+                    </div>
+            </footer>
+        </div>
+        <script src="js/script.js"></script>
+        <script>
+            let slideIndex = 1;
+            showSlides(1);
+            setInterval(function () {
+            plusSlides(1);
+            }, 10000);
+        </script>
+    </body>
+</html>

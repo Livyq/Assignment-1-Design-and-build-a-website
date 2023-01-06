@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Water World Swim School Assessment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="wrapper header">
+            <div id="topMenu" class="menu">
+                <a href="index.html"><div class="logo"></div></a>
+                <div class="item"><a href="index.html">Home</a></div>
+                <div class="item dropdown">
+                    <a href="#" onclick="showSubMenu(event)" onmouseover="showSubMenu(event)">About Us
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="ourstory.html">Our Story</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="testimonials.html">Testimonials</a>
+                      </div>
+                </div>
+                <div class="item dropdown">
+                    <a href="#" onclick="showSubMenu(event)" onmouseover="showSubMenu(event)">Programs
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="programs.html">All programs</a>
+                        <a href="babies.html">Babies</a>
+                        <a href="preschool.html">Preschool </a>
+                        <a href="primary.html">Primary  School</a>
+                        <a href="adults.html">Adults</a>
+                      </div>
+                </div>
+                <div class="item"><a href="news.html">News</a></div>
+                <div class="item dropdown">
+                    <a href="#" onclick="showSubMenu(event)" onmouseover="showSubMenu(event)">Contact
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="details.html">Details</a>
+                        <a href="feedback.html">Feedback</a>
+                      </div>
+                </div>
+                <div class="item"><a href="assessment.html">Assessment</a></div>
+                <div class="item icon">
+                    <a onclick="showMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="body">
+            <div class="title-flex-container">
+                <div class="title-box"><h1>ASSESSMENT</h1></div> 
+                <div class="title-box"><img alt="image" src="images/icons8-water-64.png"></div>                             
+            </div>
+            <div class="wrapper">
+                <h1>Book An Assessment With Us Today!</h1> 
+                <form class= "assessment-form" action="MAILTO:olivia@gmail.com" method="post" autocomplete="on" 
+                enctype="text/plain">
+                    <h2>Please fill out the details below to assist us with the assessment.</h2>
+                    <div class="swim-assessment">
+                      <label for="name">Your First Name</label>
+                      <input type="text" id="name" name="visitor_name" placeholder="John"  required>
+                    </div> 
+                    <div class="swim-assessment">
+                        <label for="name">Your Last Name</label>
+                        <input type="text" id="name" name="visitor_name" placeholder="Smith"  required>
+                    </div>
+                    <div class="swim-assessment">
+                    <label for="name">Your Birthday</label>
+                    <input type="date"name="birthday" required>
+                    </div>
+                    <div class="swim-assessment">
+                      <label for="email">Your E-mail</label>
+                      <input type="email" id="email" name="visitor_email" placeholder="john.Smith@email.com" required>
+                    </div>
+                    <div class="swim-assessment">
+                      <label for="phone">Your Phone</label>
+                      <input type="tel" id="phone" name="visitor_phone" placeholder="123-456-789" required >
+                    </div> 
+                    <!-- select elements -->
+                    <label for="day">Assessment Day</label>
+                    <select required>
+                        <option value="day">Monday</option>
+                        <option value="day">Tuesday</option>
+                        <option value="day">Wednesday</option>
+                        <option value="day">Thursday</option>
+                        <option value="day">Friday</option>
+                    </select><br /><br />
+
+                    <label for="assessment-day">Assessment Time</label>
+                    <span class="radio-button">
+                        <input type="radio" id="am" name="time" value="am" required>
+                        <span class="form-text">Morning</span>
+                    </span>
+                    <span class="radio-button">
+                        <input type="radio" id="pm" name="time" value="pm" required>
+                        <span class="form-text">Afternoon</span>
+                    </span>
+                    <label for = "assessment-contact"> How would you like to be contacted</label>
+                    <span class="checkbox">
+                    <input type="checkbox" name="contact" value="phone" />
+                    <span class="form-text">Phone</span>
+                    </span>
+                    <span class="checkbox">
+                        <input type="checkbox" name="contact" value="mobile" />
+                        <span class="form-text">Mobile</span>
+                        </span>
+                    <span class="checkbox">
+                        <input type="checkbox" name="contact" value="email"  />
+                        <span class="form-text">Email</span>
+                    </span>
+                    <span class="checkbox">
+                        <input type="checkbox" name="contact" value="mail" />
+                        <span class="form-text">Mail</span>
+                    </span> 
+                    <span class="required-field">* Required field</span>
+                    <div class="swim-assessment-comment">
+                      <label for="message" class="swim-assessment-comment">Anything Else?</label>
+                      <textarea id="message" name="visitor_message" 
+                      placeholder="Tell us anything else that might be important." ></textarea>
+                    </div>
+                   
+                    <button type="submit">Sumbit</button>
+                  </form>
+            </div>
+        </main>
+        
+
+
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="item">
+                    <div class="logo"></div><br>
+                    <div class="copyright">
+                        <p><strong>Disclaimer & Copyright @2022</strong> </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h2>Programs</h2>
+                    <a href="babies.html"><h4>Babies</h4></a>
+                    <a href="preschool.html"><h4>Preschool Age</h4></a>
+                    <a href="primary.html"><h4>Primary Age</h4></a>
+                    <a href="adults.html"><h4>Adults</h4></a>
+                </div>
+                <div class="item">         
+                    <h2>Sitemap</h2>
+                    <a href="index.html"><h4>Home</h4></a>
+                    <a href="ourstory.html"><h4>About Us</h4></a>
+                    <a href="programs.html"><h4>Programs</h4></a>
+                    <a href="news.html"><h4>News</h4></a>
+                    <a href="details.html"><h4>Contact</h4></a>
+                    <a href="assessment.html"><h4>Assessment</h4></a>
+                </div>
+                <div class="item">
+                    <h2>Get in touch</h2>
+                    <div class="flex-container">
+                        <div class="contact">
+                            <a href="tel:323123123">
+                                <span class="phone-icon"></span>
+                                <p>323123123</p>
+                            </a>
+                        </div>
+                        <div class="contact">
+                            <a href="mailto:lsdkfjdlfj@mail.com">
+                                <span class="email-icon"></span><p>lsdkfjdlfj@mail.com</p>
+                            </a>
+                        </div>
+                    </div>
+                    <h2>Social Media</h2>
+                    <a href="https://www.facebook.com" style="display:inline"><img alt="image" class="social-icon" src="images/footer/fb.png"></a>
+                    <a href="https://www.twitter.com" style="display:inline"><img alt="image" class="social-icon" src="images/footer/twitter.png"></a>
+                    <a href="https://www.instagram.com" style="display:inline"><img alt="image" class="social-icon" src="images/footer/ins.png"></a>
+                </div>
+        </footer>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
